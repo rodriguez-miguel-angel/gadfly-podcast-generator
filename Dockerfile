@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y \
 # RUN pip3 install python3-yaml
 
 # Set the virtual environment as the default Python environment 
-ENV PATH="/opt/venv/bin:$PATH"
+# ENV PATH="/opt/venv/bin:$PATH"
 
 COPY feed.py /usr/bin/feed.py
 

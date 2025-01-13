@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
 # RUN pip3 install --upgrade python3-pip 
 
 # Install other dependencies 
-RUN pip3 install python3-pyyaml
+RUN pip3 install python3-PyYAML
 
 
 COPY feed.py /usr/bin/feed.py

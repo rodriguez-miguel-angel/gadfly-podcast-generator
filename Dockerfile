@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
     git \
-    python3-yaml
+    python3-PyYAML
 
 # Upgrade pip 
 # RUN pip3 install --upgrade python3-pip 

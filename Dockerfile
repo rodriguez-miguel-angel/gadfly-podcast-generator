@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
 # RUN pip3 install --upgrade python3-pip 
 
 # Install other dependencies 
-RUN pip3 install python3-PyYAML
+RUN pip3 install PyYAML
 
 # Set the virtual environment as the default Python environment 
 # ENV PATH="/opt/venv/bin:$PATH"

@@ -33,7 +33,7 @@ COPY feed.py /app/feed.py
 COPY entrypoint.sh /app/entrypoint.sh
 
 # Make the script executable 
-RUN chmod +x /app/entrypoint.sh
+RUN chmod -R 77f /app/entrypoint.sh
 
 # Run the script
 ENTRYPOINT ["/app/entrypoint.sh"]

@@ -6,8 +6,8 @@ FROM ubuntu:latest
 RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
-    git \
-    python3-PyYAML
+    python3-PyYAML \
+    git
 
 # Upgrade pip 
 RUN pip3 install --upgrade python3-pip 

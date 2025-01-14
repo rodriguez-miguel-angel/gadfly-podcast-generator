@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
     python3-PyYAML
 
 # Upgrade pip 
-# RUN pip3 install --upgrade python3-pip 
+RUN pip3 install --upgrade python3-pip 
 
 # Install other dependencies 
 RUN pip3 install python3-PyYAML

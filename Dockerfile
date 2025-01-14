@@ -25,15 +25,12 @@ RUN /opt/venv/bin/pip install PyYAML
 # Set the virtual environment as the default Python environment 
 ENV PATH="/opt/venv/bin:$PATH"
 
-# Set the working directory 
-WORKDIR /app
+COPY feed.py /usr/bin/feed.py
 
-COPY feed.py /app/feed.py
-
-COPY entrypoint.sh /app/entrypoint.sh
+COPY entrypoint.sh /entrypoint.sh
 
 # Make the script executable 
-RUN chmod -R 775 /app/entrypoint.sh
+RUN chmod -R 775 /entrypoint.sh
 
 # Run the script
-ENTRYPOINT ["/app/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]

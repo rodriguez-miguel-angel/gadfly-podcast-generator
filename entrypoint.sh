@@ -8,14 +8,7 @@ git config --global --add safe.directory /github/workspace
 
 
 
-# python3 /usr/bin/feed.py
-
-# Activate the virtual environment 
-source /opt/venv/bin/activate
-
-# Run the Python script
-python /app/feed.py
-
+python3 /usr/bin/feed.py
 
 git add -A && git commit -m "Update Feed"
 
